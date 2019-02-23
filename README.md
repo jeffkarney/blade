@@ -41,7 +41,8 @@ $blade->compiler()->directive('datetime', function ($expression) {
 
 The Blade instances passes all methods to the internal view factory. So methods such as `exists`, `file`, `share`, `composer` and `creator` are available as well. Check out the [original documentation](http://laravel.com/docs/5.4/views) for more information.
 
-Integrations
+License
 -----
 
-- [Phalcon Slayer Framework](https://github.com/phalconslayer/slayer) comes out of the box with Blade.
+This is a fork of [jenssegers/blade](https://github.com/jenssegers/blade) authored by Jens Segers and released under the MIT license.
+
