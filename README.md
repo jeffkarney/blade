@@ -1,13 +1,9 @@
 Blade
 =====
 
-[![Latest Stable Version](http://img.shields.io/github/release/jenssegers/blade.svg)](https://packagist.org/packages/jenssegers/blade) [![Build Status](http://img.shields.io/travis/jenssegers/blade.svg)](https://travis-ci.org/jenssegers/blade) [![Coverage Status](http://img.shields.io/coveralls/jenssegers/blade.svg)](https://coveralls.io/r/jenssegers/blade)
+[![Latest Stable Version](http://img.shields.io/github/release/jeffkarney/blade.svg)](https://packagist.org/packages/jeffkarney/blade) [![Build Status](http://img.shields.io/travis/jeffkarney/blade.svg)](https://travis-ci.org/jeffkarney/blade) [![Coverage Status](http://img.shields.io/coveralls/jeffkarney/blade.svg)](https://coveralls.io/r/jeffkarney/blade)
 
-The standalone version of [Laravel's Blade templating engine](http://laravel.com/docs/5.1/blade) for use outside of Laravel.
-
-<p align="center">
-<img src="https://jenssegers.com/uploads/images/blade2.png" height="200">
-</p>
+The standalone version of [Laravel's Blade templating engine](http://laravel.com/docs/5.4/blade) for use outside of Laravel.
 
 Installation
 ------------
@@ -15,16 +11,16 @@ Installation
 Install using composer:
 
 ```bash
-composer require jenssegers/blade
+composer require jeffkarney/blade
 ```
 
 Usage
 -----
 
-Create a Blade instance by passing it the folder(s) where your view files are located, and a cache folder. Render a template by calling the `make` method. More information about the Blade templating engine can be found on http://laravel.com/docs/5.1/blade.
+Create a Blade instance by passing it the folder(s) where your view files are located, and a cache folder. Render a template by calling the `make` method. More information about the Blade templating engine can be found on http://laravel.com/docs/5.4/blade.
 
 ```php
-use Jenssegers\Blade\Blade;
+use JeffKarney\Blade\Blade;
 
 $blade = new Blade('views', 'cache');
 
@@ -43,7 +39,7 @@ $blade->compiler()->directive('datetime', function ($expression) {
 @datetime($dateObj)
 ```
 
-The Blade instances passes all methods to the internal view factory. So methods such as `exists`, `file`, `share`, `composer` and `creator` are available as well. Check out the [original documentation](http://laravel.com/docs/5.2/views) for more information.
+The Blade instances passes all methods to the internal view factory. So methods such as `exists`, `file`, `share`, `composer` and `creator` are available as well. Check out the [original documentation](http://laravel.com/docs/5.4/views) for more information.
 
 Integrations
 -----
